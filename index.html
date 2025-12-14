@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Berita Terkini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Login -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>📰 Berita Terkini</h2>
+    <div id="user-area">
+      <div id="g_id_onload"
+        data-client_id="ISI_CLIENT_ID_KAMU_DISINI"
+        data-callback="handleCredentialResponse">
+      </div>
+
+      <div class="g_id_signin" data-theme="outline" data-size="medium"></div>
+
+      <div id="user-info" class="hidden">
+        <img id="user-pic">
+        <span id="user-name"></span>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    <article class="card">
+      <h3>Teknologi AI Semakin Canggih</h3>
+      <p>AI kini digunakan di berbagai bidang seperti pendidikan, kesehatan, dan industri...</p>
+    </article>
+
+    <article class="card">
+      <h3>Pendidikan Digital Meningkat</h3>
+      <p>Platform belajar online semakin banyak digunakan oleh pelajar di Indonesia...</p>
+    </article>
+
+    <article class="card">
+      <h3>Keamanan Data Jadi Perhatian</h3>
+      <p>Pakar mengingatkan pentingnya menjaga keamanan akun digital...</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Berita Terkini | Login Google</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
